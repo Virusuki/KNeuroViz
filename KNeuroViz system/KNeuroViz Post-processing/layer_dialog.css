@@ -1,0 +1,203 @@
+/**
+ * @license
+ * Copyright 2016 Google Inc.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.add-layer-overlay {
+  width: 80vw;
+}
+
+.add-layer-name {
+  display: flex;
+  flex-direction: row;
+  font-family: monospace;
+}
+
+.add-layer-overlay .dialog-status {
+  width: 100%;
+  height: 4em;
+  overflow: auto;
+}
+
+.add-layer-overlay form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.add-layer-overlay form {
+  margin-bottom: 5px;
+}
+
+.add-layer-overlay form button {
+  margin-left: 1em;
+}
+
+.add-layer-overlay form > label {
+  margin-right: 1em;
+  min-width: 4em;
+}
+
+.add-layer-name, .add-layer-source {
+  border: 1px solid black;
+  padding: 2px;
+  flex: 1;
+}
+
+.add-layer-name.invalid-input {
+  border: 1px solid red;
+}
+
+.add-layer-overlay .add-layer-name {
+  font-family: monospace;
+  flex: 1;
+  outline: 0;
+  margin: 0;
+}
+
+.add-layer-overlay .dialog-status.dialog-status-error {
+  color: red;
+}
+
+
+/* Joe 아래 부터 새로 추가한 부분 */
+div { 
+  border:solid 0px #ff77ff; 
+  font-weight: bold; 
+  /* font-size: 30px;  */
+  text-align:center;
+}
+
+#wrap {
+  width:85vw; 
+  padding:3px; 
+  /* background-color:#ccbaba; */ 
+  overflow:hidden; 
+  margin:0 auto;
+}
+
+/* #title {
+  width: 80vw; background-color:#33ccff; overflow: hidden; height:70px;
+} */
+
+ #ncrgLogo {
+   /* background-position-x: left; 
+  width: 500px;
+  height: 200px;
+  background: yellow url('/src/neuroglancer/ncrgImage/ncrg_logo01.png') no-repeat left left; */
+  /* padding-top:1px; */
+  width: 337px;
+  float: left;
+} 
+
+#header {
+  position: relative;
+  background-image: url("/src/neuroglancer/ncrgImage/bgimg.jpg");
+  /* background-color: #1ed7a1; */ 
+  height:124px; 
+  color:#fff; 
+  font-size: 1.5em;
+}
+
+#neuro_title {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 38%;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+/* #user_name {
+  font-size: 0.3em;
+} */
+
+#container {
+  padding-top: 1px; 
+  /* background-color:#3d3939;  */
+  background-color: white;
+  overflow:scroll; 
+  margin: 0px 0;
+}
+
+#sidebar {
+  float:left; 
+  background-color:#f57373; 
+  width:20%; 
+  height:80vh; 
+}
+
+#content {
+  float:right; 
+  width:65vw; 
+  height:80vh; 
+}
+
+#footer {
+  background-color: #ccffcc; 
+  height:80px; 
+  color:#ff77ff;
+}
+
+.btnData1 {
+  clear: both;
+  /* background-color: #4caf50; */
+  background-color: white;
+  border-color: #4caf50;
+  border: none;
+  /* color: white; */
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 4px solid #4caf50;
+}
+
+.btnData1:hover {
+  background-color: #4caf50;
+  /* border-color: white; */
+  border-radius: 4px;
+  color: white;
+}
+
+/* 
+.btnData1 {
+  clear: both; 
+  font-size: 0.5em; 
+  padding:1.2em; 
+  margin: 15px 10px; 
+  border-radius: 5px;
+  background-color: #00cc99;
+}
+
+ .btnData1:hover {
+   background-color: #008060;
+  cursor: pointer;
+} 
+ */
+
+/* .lMenu {
+  width: 90%; 
+  background-color:#00cc99; 
+  margin:5px 10px; 
+  font-size: 1.1em; 
+  padding:5px 1px;
+}  */
+

@@ -1,0 +1,154 @@
+/**
+ * @license
+ * Copyright 2016 Google Inc.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.neuroglancer-panel {
+  flex: 1;
+}
+
+.neuroglancer-show-panel-borders .neuroglancer-panel {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.neuroglancer-panel:focus {
+  border-color: white;
+}
+
+.neuroglancer-layer-group-viewer {
+  outline: 0px;
+  position: relative; /*   Joe */
+  display: inline-block; /* Joe */
+}
+
+.neuroglancer-layer-group-viewer-context-menu {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.neuroglancer-layer-group-viewer-context-menu label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.neuroglancer-layer-group-viewer-context-menu select::before {
+  flex: 1;
+  content: " ";
+}
+
+.neuroglancer-layer-group-viewer-context-menu select {
+  margin-left: 5px;
+}
+
+/* ////////// Joe 여기서 추가한 것 //////////////// */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+
+/* Joe 아래는 툴팁을 띄우기 위한 CSS 레이아웃이다  */
+/* .tooltip {
+  padding: 80px;
+  height: 150px;
+  background-color: #eeeeee;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+} */
+
+
+.neuroglancer-layer-group-viewer .tooltiptext {
+  /* visibility: hidden;
+  display: table-cell;
+  position: relative;
+  width: 105px;
+  font-size: 0.7em;
+  background-color: #003300;
+  color: #fff;
+  text-align: center;
+  line-height: 33px; */
+  /* vertical-align: middle; */
+  /* border-radius: 6px;
+  padding: 5px 5px;
+  z-index: 1300;  */
+  /* position: absolute;  */
+  /* top: 10%;
+  left: 10%;
+  bottom: 70%; */
+  /* margin-left: -212px; */
+  /* margin-left: -241px;
+  margin-top: 9px; */
+}
+
+/* 툴팁 텍스트의 아랫쪽 작은 화살표 */
+.neuroglancer-layer-group-viewer .tooltiptext::after {
+  /* content: "";
+  position: absolute; */
+  /* color: black; content의 색깔 */
+  /* top: 100%;
+  left: 50%;
+  z-index: 1300;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid; */
+  /* border-color의 Top Right Bottom Left의 색상 지정 */
+  /* border-color: black; */
+  /* border-color: black transparent transparent transparent; */
+}
+
+.neuroglancer-layer-group-viewer:hover .tooltiptext {
+  /* visibility: visible; */
+}
