@@ -33,13 +33,13 @@ The KNeuroViz system is a built-in system running on a KBrain-map portal in priv
 So, there are two cases in order to visualize the ouput of KNeuroViz preprocessing. 
 Select as follows: (2.A-neuroglancer and 2.B-KNeuroViz 3D viewer)
 
-2.A views the results of KNeuroViz pre-processing with a neuroglancer.
+2-1. views the results of KNeuroViz pre-processing with a neuroglancer.
 - 2.A.1. Download igneous source. You will want to use the master branch from the [KNeuroViz fork](https://github.com/KBRI-NCRG/neuroglancer) of neuroglancer. 
 - 2.A.2 nvm install stable
 - 2.A.3 npm i
 - 2.A.4 npm run dev-server
  
-2.B is a neuroglancer based extended KNeuroViz post-processing 3D viewer. However, since the post-processing viewer is linked with our private KBrain-map portal, 
+2-2. is a neuroglancer based extended KNeuroViz post-processing 3D viewer. However, since the post-processing viewer is linked with our private KBrain-map portal, 
   we share it as a source file. we share it as a source file. (You can use it by modifying the input part of the loading data in the provided source file.)
   KNeuroViz viewer 3D features include:
 - (1).	Segmentation ID list window
