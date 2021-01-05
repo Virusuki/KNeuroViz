@@ -1,5 +1,5 @@
 # KNeuroViz video(demo)
-https://www.naver.com/
+https://youtu.be/wJ-n5PRnLTQ
 
 # KNeuroViz
 The KNeuroViz is extended to a system with user-convenient and detailed analytical functions based on Neuroglancer.
