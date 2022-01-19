@@ -1,5 +1,6 @@
 # KNeuroViz video(demo)
-https://youtu.be/wJ-n5PRnLTQ
+(포스터) https://github.com/Virusuki/KNeuroViz/blob/master/files/KNeuroViz_poster.pdf
+(동영상) https://youtu.be/wJ-n5PRnLTQ
 
 # KNeuroViz
 The KNeuroViz is extended to a system with user-convenient and detailed analytical functions based on Neuroglancer.
